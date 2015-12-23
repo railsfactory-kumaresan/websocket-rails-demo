@@ -1,0 +1,10 @@
+<div id="echo" data-uri="<%= request.host %>:<%= request.port %>/websocket">
+    <ul id="messages"></ul>
+    <ul id="posts">
+     <% @posts.each do | post| %>
+       <h3><%= post.title %></h3>
+     <% end %>
+     </ul>
+    <input id="send"/>
+    <button id="fire">Send</button>
+</div>
